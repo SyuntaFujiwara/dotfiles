@@ -1,0 +1,112 @@
+# plugins{{{
+
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# }}}
+
+# ---------------------------------------------
+#                 見た目系
+# ---------------------------------------------
+
+#[[plugins]]
+#repo = 'itchyny/lightline.vim'
+#hook_add = '''
+#    source ~/.config/nvim/plugins/settings/lightline.vim
+#    '''
+
+# view{{{
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+    source ~/.config/nvim/plugins/settings/airline.vim
+    '''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+# }}}
+
+# lsp{{{
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = 0
+hook_source = 'source ~/.config/nvim/plugins/settings/coc.rc.vim'
+
+# }}}
+
+# ---------------------------------------------
+#                 snippets
+# ---------------------------------------------
+# snippets{{{
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+hook_add = '''
+    let g:UltiSnipsExpandTrigger="<c-k>"
+    let g:UltiSnippetDirectries = '~/.config/nvim/snippets'
+    '''
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+# }}}
+
+# filer{{{
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+# }}}
+
+# fzf{{{
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+depends = 'fzf'
+hook_add = '''
+    command! -bang -nargs=* Rg
+'''
+
+# }}}
+
+# linter{{{
+
+[[plugins]]
+repo = 'dense-analysis/ale'
+hook_source = 'source ~/.config/nvim/plugins/settings/ale.vim'
+
+# }}}
+
+# language{{{
+
+# all
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+# c++
+[[plugins]]
+repo = 'vim-jp/vim-cpp'
+on_ft = 'cpp'
+
+# Toml
+[[plugins]]
+repo  = 'cespare/vim-toml'
+on_ft = 'toml'
+
+# }}}
+
+
+# ---------------------------------------------
+#                   その他
+# ---------------------------------------------
