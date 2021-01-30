@@ -5,10 +5,6 @@ repo = 'Shougo/dein.vim'
 
 # }}}
 
-# ---------------------------------------------
-#                 見た目系
-# ---------------------------------------------
-
 #[[plugins]]
 #repo = 'itchyny/lightline.vim'
 #hook_add = '''
@@ -29,6 +25,11 @@ repo = 'vim-airline/vim-airline-themes'
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+    let g:indentLine_char = '¦'
+'''
 # }}}
 
 # lsp{{{
@@ -42,9 +43,6 @@ hook_source = 'source ~/.config/nvim/plugins/settings/coc.rc.vim'
 
 # }}}
 
-# ---------------------------------------------
-#                 snippets
-# ---------------------------------------------
 # snippets{{{
 
 [[plugins]]
@@ -106,7 +104,3 @@ on_ft = 'toml'
 
 # }}}
 
-
-# ---------------------------------------------
-#                   その他
-# ---------------------------------------------
