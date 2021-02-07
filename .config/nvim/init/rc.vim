@@ -21,6 +21,8 @@ set clipboard+=unnamedplus
 " 見た目系
 " 行番号を表示
 set number
+" エラー表示列を常に表示
+set signcolumn=yes
 " 現在の行を強調表示
 "set cursorline
 " インデントはスマートインデント
