@@ -8,6 +8,6 @@ fi
 
 chpwd(){
     if [[ $(pwd) != $HOME ]]; then;
-        ls
+        lsd
     fi
 }
